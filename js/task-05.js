@@ -7,7 +7,7 @@ const outputRef = document.querySelector('#name-output');
 console.log(inputRef);
 console.log(outputRef);
 
-inputRef.addEventListener('change', event => {
+inputRef.addEventListener('input', event => {
     if (event.currentTarget.value === "") {
         outputRef.textContent = 'Anonymous';
     } else {
